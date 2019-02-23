@@ -1,3 +1,45 @@
-<p>
-  graphics1 works!
-</p>
+<div class="row">
+  <span class="col-6" *ngFor="let elem_grafico of chartsConfig">
+    <div class="card">
+      <div class="card-body">
+        <app-grafico-charts [char_options]="elem_grafico"></app-grafico-charts>
+      </div>
+    </div>
+  </span>
+</div>
+
+
+<!-- <div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        Podria incluso enviar las opcionesdel color en el JSON
+        <app-grafico-charts [char_options]="graficos.grafico1"></app-grafico-charts>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-grafico-charts [char_options]="graficos.grafico2"></app-grafico-charts>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-grafico-charts [char_options]="graficos.grafico3"></app-grafico-charts>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-grafico-charts [char_options]="graficos.grafico4"></app-grafico-charts>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
