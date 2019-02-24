@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import { PAGES_ROUTES } from './pages.routes';
 
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
 
@@ -19,6 +20,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoChartsComponent } from '../components/grafico-charts/grafico-charts.component';
 
+
 @NgModule({
   declarations: [
     PagesComponent,
@@ -26,7 +28,8 @@ import { GraficoChartsComponent } from '../components/grafico-charts/grafico-cha
     ProgressComponent,
     Graphics1Component,
     IncrementadorComponent,
-    GraficoChartsComponent
+    GraficoChartsComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,
