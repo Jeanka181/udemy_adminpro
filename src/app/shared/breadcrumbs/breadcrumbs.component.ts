@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbsComponent implements OnInit {
 
-  constructor() { }
+  // public tituloPage: string;
+
+  constructor() {
+    // esto va en el const de entrada, private router: Router, private titleWindows: Title
+    // this.getDataRoute(router)
+    // .subscribe( data => {
+    //   // console.log(data);
+    //   this.tituloPage = data.titulo;
+    //   this.titleWindows.setTitle(this.tituloPage);
+    // });
+   }
 
   ngOnInit() {
   }
+
+  /* getDataRoute(ruta: Router) {
+    return ruta.events.pipe(
+      filter( eventos => eventos instanceof ActivationEnd ),
+      filter( (eventos: ActivationEnd) => eventos.snapshot.firstChild === null ),
+      // ingresa un evento a la funcion y sale, solo el argumento data, para recuperar el titulo
+      map( (eventos: ActivationEnd) => eventos.snapshot.data )
+    );
+  } */
 
 }

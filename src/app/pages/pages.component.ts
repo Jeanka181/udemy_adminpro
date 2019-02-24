@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// inicializa los puglin del template, cargado el archivo custom.js,
+// leda control a los padres/hijos de los script de terceros
 declare function intitPuginsMenu();
 
 @Component({

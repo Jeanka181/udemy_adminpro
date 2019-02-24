@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PAGES_ROUTES } from './pages.routes';
 
@@ -19,6 +19,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 // temporales
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoChartsComponent } from '../components/grafico-charts/grafico-charts.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { GraficoChartsComponent } from '../components/grafico-charts/grafico-cha
     Graphics1Component,
     IncrementadorComponent,
     GraficoChartsComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,

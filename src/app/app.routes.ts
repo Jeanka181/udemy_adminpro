@@ -5,9 +5,8 @@ import { RegisterComponent } from './login/register.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 
 const appRoutes: Routes = [
-  
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent},
+  { path: 'login', component: LoginComponent, data: { titulo: 'Ingesar' } },
+  { path: 'register', component: RegisterComponent, data: { titulo: 'Registrarse' }},
   { path: '**', component: NopagefoundComponent}
 ];
 
