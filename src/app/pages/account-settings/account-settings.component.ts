@@ -16,7 +16,7 @@ export class AccountSettingsComponent implements OnInit {
     this.setearChechTheme();
   }
 
-  changeTheme(color: String, link: any){
+  changeTheme(color: string, link: any){
     this.aplicarCheckTheme(link);
     this._ajustes.aplicarTema(color);
   }

@@ -9,10 +9,14 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
 
+import { LoginGuardGuard } from '../services/service.index';
+
+
 const pagesRoutes: Routes = [
   {
     path: '',
     component: PagesComponent,
+    canActivate: [ LoginGuardGuard ],
     children: [
       { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Panel de control', descripcion: 'App del curso de Udemy' }},
       { path: 'progress', component: ProgressComponent, data: { titulo: 'Progress' }},
