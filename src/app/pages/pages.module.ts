@@ -15,6 +15,8 @@ import { Graphics1Component } from './graphics1/graphics1.component';
 // https://valor-software.com/ng2-charts/
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
 
 // temporales
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
@@ -45,7 +47,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     CommonModule,
     PAGES_ROUTES,
     SharedModule,
-    ChartsModule
+    ChartsModule,
+    PipesModule
   ]
 })
 
